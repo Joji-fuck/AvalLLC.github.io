@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Вы в шаге от покупки...</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-h2">Оставьте свои данные для того, чтобы наш мастер связался с вами</h2>
+                <div class="modal-input">
+                    <input id="name" type="text" placeholder="Имя">
+                    <input id="tel" placeholder="Телефон" type="tel">
+                </div>
+                <button class="modal-btn" id="modal-btn">Заказать</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="endModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="modal-title-error">Получилось!</h3>
+            </div>
+            <div class="modal-body">
+                <h2 id="modal-error" class="modal-h2">Ваша заявка будет рассмотрена в ближайшее время!</h2>
+                <button class="modal-btn" id="modal-btn-close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="navbar-menu wrap">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="/#anchor1">Наши работы</a></li>
+                <li><a href="/#anchor2">Услуги</a></li>
+                <li><a href="ring.html">Каталог</a></li>
+                <li><a href="/#anchor3">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="info" id="menu">
+        <ul class="info-menu">
+            <li><a href="index.html"><p class="logo">ООО "Аваль"</p></a></li>
+            <li><p>🕒 10:00 - 20:00</p></li>
+            <li><p>✉︎ aval.llc@mail.ru</p></li>
+            <li><a href="tel:+7(982)900-90-03">☏ +7(982)900-90-03</a></li>
+        </ul>
+    </div>
+    <div class="menu-catalog wrap">
+        <button id="btn-ring" class="menu-catalog-btn">Кольца</button>
+        <button id="btn-bracelet" class="menu-catalog-btn">Браслеты</button>
+        <button id="btn-chain" class="menu-catalog-btn">Цепочки</button>
+        <button id="btn-earrings" class="menu-catalog-btn">Серьги</button>
+        <button id="btn-pendant" class="menu-catalog-btn">Подвески</button>
+    </div>
+    <div class="works" id="works">
+        <div class="works-txt">
+            <h1>Каталог</h1>
+            <h2>Серьги</h2>
+        </div>
+
+        <div class="catalog">
+            <div class="catalog-card">
+                <img src="Catalog/earrings_img/1.png" alt="" width="375" height="280">
+                <div class="catalog-txt">
+                    <h2>Серёжки серебрянные арт.1</h2>
+                    <p>Размер - 18.75</p>
+                    <h1>8 990 ₽</h1>
+                </div>
+                <div class="catalog-btn-container">
+                <button class="catalog-btn" id="catalog-btn1">Заказать</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <img src="Catalog/earrings_img/2.png" alt="" width="375" height="280">
+                <div class="catalog-txt">
+                    <h2>Серёжки серебрянные арт.2</h2>
+                    <p>Размер - 18.75</p>
+                    <h1>12 990 ₽</h1>
+                </div>
+                <button class="catalog-btn" id="catalog-btn2">Заказать</button>
+            </div>
+            <div class="catalog-card">
+                <img src="Catalog/earrings_img/3.png" alt="" width="375" height="280">
+                <div class="catalog-txt">
+                    <h2>Серёжки серебрянные арт.3</h2>
+                    <p>Размер - 18.75</p>
+                    <h1>22 990 ₽</h1>
+                </div>
+                <button class="catalog-btn" id="catalog-btn3">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <script src="adress.js"></script>
+</body>
+</html>

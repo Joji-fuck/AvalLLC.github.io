@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.wrap{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Начало навбара */
+.navbar{
+    background: rgb(46, 46, 46);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 15px 0 15px 0;
+}
+.navbar-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+/* Конец навбара */
+
+/* Начало инфы */
+.info{
+    margin-top: 50px;
+    background: rgb(46, 46, 46);
+}
+.info-menu{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+.info-menu li{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    list-style: none;
+}
+.info-menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Главная*/
+.main{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(img/main.png) no-repeat;
+    background-size: cover;
+}
+.main-txt{
+    background-size: cover;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    max-width: 1200px;
+    height: 845px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-txt h1{
+    font-size: 50px;
+}
+.main-txt p{
+    font-size: 22px;
+}
+.main-txt a{
+    border: 2px;
+    padding: 15px 60px;
+    border-radius: 7px;
+    background: rgb(66, 66, 66);
+    color: white;
+    font-size: 19px;
+    transition: 0.3s;
+    width: 10%;
+    text-decoration: none;
+}
+.main-txt a:hover{
+    background: rgb(53, 53, 53);
+    transition: 0.3s;
+}
+.main-txt p{
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+/*Конец главной*/
+
+/* Галерея */
+.works-txt{
+    text-align: center;
+    margin: 60px 0 35px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.works-txt h1{
+    font-size: 40px;
+}
+.works-txt h2{
+    margin-top: 10px;
+    font-weight: 300;
+}
+.works-photo{
+    display: grid;
+    grid-template-columns: repeat(3, 375px);
+    grid-template-rows: repeat(2, 280px) 70px;
+    gap: 20px;
+    grid-template-areas: 
+    '1 2 3'
+    '4 5 6'
+    'button button button';
+    justify-content: center;
+}
+.works-photo a{
+    padding: 25px 70px;
+    border-radius: 7px;
+    background: rgb(66, 66, 66);
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    grid-area: button;
+}
+.works-photo a:hover{
+    background: #353535;
+    transition: 0.3s;
+}
+/* Конец галереи */
+/* Услуги */
+.services-txt{
+    text-align: center;
+    margin: 60px 0 35px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.services-txt h1{
+    font-size: 40px;
+}
+.services-txt h2{
+    margin-top: 10px;
+    font-weight: 300;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 160px;
+    grid-template-areas: 
+    '1 2 3';
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+.services-content-top button{
+    text-align: center;
+    color: white;
+    text-decoration: none; 
+    background: #424242;
+    width: 370px;
+    height: 70px;
+    border: none;
+    border-radius: 7px 7px 0 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.services-content-down{
+    width: 368px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: rgba(149,157,165,.2) 0 8px 24px;
+}
+.services-content-down p{
+    padding-top: 20px;
+    font-size: 18px;
+}
+/* Конец услуг */
+/* Услуги контент */
+.about{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.about-card{
+    display: flex;
+}
+.about-card-txt{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 40px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.about-card-txt p:first-child{
+    font-size: 42px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+/* контент конец */
+/* контакты */
+.contacts{
+    background: rgb(66, 66, 66);
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+.contacts-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.contacts-left h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.contacts-left p:nth-child(5){
+    margin-top: 30px;
+}
+.map{
+    width: 900px;
+    height: 400px;
+}
+/* Конец контактов */
+/* Подвал */
+.footer{
+    display: flex;
+    background: rgb(66, 66, 66);
+    color: white;
+    justify-content: space-around;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 0 30px 0;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.footer a:hover{
+    color: #b8b8b8;
+    transition: 0.3s;
+}
+
+
+/* ===============Каталог================ */
+/* каталог меню */
+.menu-catalog{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.menu-catalog-btn{
+    color: white;
+    text-decoration: none; 
+    background: rgb(66, 66, 66);
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-top: 24px;
+}
+/* конец каталог меню */
+
+/* Каталог */
+.catalog-txt{
+    text-align: center;
+    margin: 20px 0 35px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.catalog-card img{
+    border-radius: 15px 15px 0 0;
+}
+.catalog-txt h2, .catalog-txt p{
+    margin-top: 10px;
+}
+.catalog-txt h2{
+    font-size: 22px;
+}
+.catalog-txt h1{
+    margin-top: 45px;
+    font-size: 1.8rem;
+}
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(3, 375px);
+    grid-template-rows: repeat(2, 550px);
+    gap: 20px;
+    grid-template-areas: 
+    '1 2 3'
+    '4 5 6';
+    justify-content: center;
+}
+.catalog-card{
+    border-radius: 15px;
+}
+.catalog-card:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.catalog-card img{
+    object-fit: cover;
+}
+.catalog-btn{
+    width: 375px;
+    height: 60px;
+    border-radius: 8px;
+    background: rgb(66, 66, 66);
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+}
+.catalog-btn:hover{
+    background: rgb(53, 53, 53);
+    transition: 0.3s;
+}
+/* Конец каталога */
+@media (width<1260px) {
+    .contacts{
+        flex-direction: column-reverse;
+    }
+    .map{
+        width: 100%;
+    }
+    .contacts-left{
+        margin-bottom: 30px;
+    }
+    .contacts-left h2{
+        margin-top: 30px
+    }
+}
+@media (width < 1151px) {
+    .works-photo{
+        grid: 
+        '1 2'
+        '3 4'
+        '5 6'
+        'button button';
+    }
+    .services-content{
+        grid: 
+        '1'
+        '2'
+        '3';
+        justify-content: center;
+        gap: 30px;
+    }
+    .services-content button{
+        width: 770px;
+    }
+    .services-content-down{
+        width: 770px;
+    }
+    .catalog{
+        grid:
+        '1 2'
+        '3 4'
+        '5 6'
+    }
+}
+@media (width < 866px) {
+    .about-card{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .about-card:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .about-card img{
+        width: 330px;
+    }
+    .about-card-txt{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+}
+@media (width < 805px) {
+    .works-photo{
+        grid: 
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6'
+        'button';
+    }
+    .catalog{
+        grid:
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6';
+    }
+    .services-content button{
+        width: 380px;
+    }
+    .services-content-down{
+        width: 380px;
+    }
+}
+@media (width < 630px) {
+    .info-menu p, a{
+        font-size: 14px;
+    }
+}
+@media (width < 520px) {
+    .navbar-menu a{
+        font-size: 14px;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    .info{
+        margin-top: 80px;
+    }
+}
+@media (width < 520px){
+    .navbar-menu ul{
+        display: grid;
+        grid-template-columns: repeat(5,70px);
+        grid-template-rows: 50px;
+        text-align: center;
+        grid-template-areas:
+        '1 . 2 . 3'
+        '. 4 . 5 .';
+        align-items: center;
+
+    }
+    .info-menu{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2,30px);
+        grid-template-areas: 
+        'logo time'
+        'email phone';
+        align-items: center;
+    }
+    .info-menu p{
+        font-size: 16px;
+    }
+    .main-txt{
+        text-align: center;
+    }
+    .main-txt h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .main-txt p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+   pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+.modal-title{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+.modal-h2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0 40px 0;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.modal-input{
+    display: flex;
+    flex-direction: column;
+}
+.modal-input input{
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+.modal-btn{
+    width: 325px;
+    height: 60px;
+    min-width: 100px;
+    border-radius: 8px;
+    background: rgb(66, 66, 66);
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(66, 66, 66);
+}
+.modal-btn:hover{
+    background: rgba(66, 66, 66, 0.9);
+    transition: 0.3s;
+}
