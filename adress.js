@@ -116,7 +116,7 @@ document.querySelectorAll(catalogi).forEach(function(btn) {
 var error = document.querySelector('#modal-error')
 var name = document.querySelector('#name');
 var tel = document.querySelector('#tel');
-var title = document.querySelector('#modal-title-error')
+var title = document.querySelector('#modal-title-error');
 
 document.querySelector('#modal-btn').addEventListener('click', function(e) {
     if (name.value != '' && tel.value != '') {
