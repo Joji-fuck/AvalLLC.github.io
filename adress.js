@@ -119,14 +119,14 @@ var tel = document.querySelector('#tel');
 var title = document.querySelector('#modal-title-error');
 
 document.querySelector('#modal-btn').addEventListener('click', function(e) {
-    if (tel.value != '' && name.value != '') {
-        error.innerHTML = 'Ваша заявка будет рассмотрена в ближайшее время!'
-        title.innerHTML = 'Получилось!'
+    if (tel.value == '' || name.value == '') {
+        title.innerHTML = 'Ошибка...'
+        error.innerHTML = 'Заполните все поля!'
         window.location.href = '#endModal';
     }
     else{
-        title.innerHTML = 'Ошибка...'
-        error.innerHTML = 'Заполните все поля!'
+        error.innerHTML = 'Ваша заявка будет рассмотрена в ближайшее время!'
+        title.innerHTML = 'Получилось!'
         window.location.href = '#endModal';
     }
 
