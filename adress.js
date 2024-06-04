@@ -119,7 +119,7 @@ var tel = document.querySelector('#tel');
 var title = document.querySelector('#modal-title-error');
 
 document.querySelector('#modal-btn').addEventListener('click', function(e) {
-    if (name.value != '' && tel.value != '') {
+    if (tel.value != '' && name.value != '') {
         error.innerHTML = 'Ваша заявка будет рассмотрена в ближайшее время!'
         title.innerHTML = 'Получилось!'
         window.location.href = '#endModal';
